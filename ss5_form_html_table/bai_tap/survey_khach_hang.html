@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="#" method="post">
+   <header id="header" class="infor">
+    <h1 style="color: darkred">Survey Khách Hàng</h1>
+       <h4>Vui lòng dành một chút thời gian để hoàn thành khảo sát về mức độ hài lòng</h4>
+   </header>
+        <h5 style="color: gray">Độ tuổi của bạn</h5>
+        <select>
+         <option>18-24</option>
+         <option>25-34</option>
+         <option>35-50</option>
+         <option>50+</option>
+       </select>
+        <h5 style="color: gray">Thu nhập hàng năm của bạn</h5>
+        <select>
+         <option>0$-25.000$</option>
+         <option>25.001$-50.000$</option>
+         <option>50.001$-100.000$</option>
+         <option>100.000$+</option>
+        </select>
+        <h5 style="color: gray">Giới Tính</h5>
+         <input type="radio"name="gender" value="nam">Nam<br>
+         <input type="radio"name="gender" value="nữ">Nữ<br>
+         <input type="radio"name="gender" value="none">Không muốn nhắc đến<br>
+         <input type="radio"name="gender" value="khác">Khác<br>
+         <input type="text"name="gender"><br>
+        <h5 style="color: gray">Bạn đã mua bao nhiêu sản phẩm trong 2 tháng qua. Vui lòng xác nhận</h5>
+         <input type="checkbox" name="Product" value="1">1 Sản Phẩm<br>
+         <input type="checkbox" name="Product" value="2">2 Sản Phẩm<br>
+         <input type="checkbox" name="Product" value="3">3 Sản Phẩm<br>
+        <h5 style="color: gray">Bạn sẽ sử dụng sản phẩm mới của chúng tôi bao lâu một lần</h5>
+         <input type="radio"name="day" value="Daily">Mỗi ngày<br>
+         <input type="radio"name="day" value="Weekly">Mỗi tuần<br>
+         <input type="radio"name="day" value="Monthly">Mỗi tháng<br>
+        <h5 style="color: gray">Bạn sẽ trả bao nhiêu cho sản phẩm mới?</h5>
+         <input type="text" name="money" style="height: 20px; width: 150px">$
+         <input type="text" name="money" style="height: 20px; width: 20px">cent
+        <h5 style="color: gray">Bạn muốn xem những tính năng nào trong sản phẩm mới.</h5>
+         <input type="text" name="text" style="height: 100px; width: 800px">
+        <h5 style="color: gray">Vui lòng đánh giá mức độ hài lòng của bạn với các nhận định sau.</h5>
+        <table border="1">
+            <tr>
+                <td></td>
+                <td>Rất không đồng ý.</td>
+                <td>Không đồng ý</td>
+                <td>Đồng ý</td>
+                <td>Rất đồng ý</td>
+            </tr>
+            <tr>
+                <td>Sản phẩm của chúng tôi được định giá khá ổn.</td><br>
+                <td><input type="radio"name="check" aria-checked="false" value="Strongly Disagree">Rất không đồng ý<br></td>
+                <td><input type="radio"name="check" aria-checked="false" value="Disagree">Không đồng ý<br></td>
+                <td><input type="radio"name="check" aria-checked="false" value="Agree">Đồng ý<br></td>
+                <td><input type="radio"name="check" aria-checked="false" value="Strongly Agree">Rất đồng ý<br></td>
+            </tr>
+            <tr>
+                <td>Sản phẩm của chúng tôi có chất lượng cao.</td><br>
+                <td><input type="radio"name="check" aria-checked="false" value="Strongly Disagree">Rất không đồng ý<br></td>
+                <td><input type="radio"name="check" aria-checked="false" value="Disagree">Không đồng ý<br></td>
+                <td><input type="radio"name="check" aria-checked="false" value="Agree">Đồng ý<br></td>
+                <td><input type="radio"name="check" aria-checked="false" value="Strongly Agree">Rất đồng ý<br></td>
+            </tr>
+            <tr>
+                <td>Bạn muốn giới thiệu sản phẩm của chúng tôi cho bạn bè hoặc đồng nghiệp.</td><br>
+                <td><input type="radio"name="check" aria-checked="false" value="Strongly Disagree">Rất không đồng ý<br></td>
+                <td><input type="radio"name="check" aria-checked="false" value="Disagree">Không đồng ý<br></td>
+                <td><input type="radio"name="check" aria-checked="false" value="Agree">Đồng ý<br></td>
+                <td><input type="radio"name="check" aria-checked="false" value="Strongly Agree">Rất đồng ý<br></td>
+            </tr>
+        </table>
+            <button type="submit">Gửi</button>
+    </form>
+</body>
+</html>

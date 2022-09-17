@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diện tích và chu vi hình tròn</title>
+</head>
+<body>
+<input id="r" placeholder="Nhập vào bán kính: ">
+<button onclick="tinhsvachinhtron()">Tính</button>
+<p id="Ketqua1"></p>
+<p id="Ketqua2"></p>
+<script>
+    function tinhsvachinhtron() {
+        let r = +document.getElementById("r").value;
+        let S = (3.14 * r * r);
+        let C = (2*3.14*r);
+        document.getElementById("Ketqua1").innerHTML = "<strong>Diện tích hình tròn là: </strong>" + S;
+        document.getElementById("Ketqua2").innerHTML="<strong>Chu vi hình tròn là: </strong>" +C;
+    }
+ </script>
+</body>
+</html>

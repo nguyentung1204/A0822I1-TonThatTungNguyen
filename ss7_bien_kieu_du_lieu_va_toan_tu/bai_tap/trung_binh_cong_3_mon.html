@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập điểm trung bình</title>
+</head>
+<body>
+<input id="VL" placeholder="Vật Lý">
+<input id="HH" placeholder="Hóa Học">
+<input id="SH" placeholder="Sinh Học">
+<button onclick="tinhdiemtrungbinh()">Tính điểm trung bình</button>
+<script>
+    function tinhdiemtrungbinh() {
+       let vl1 = +document.getElementById("VL").value;
+       let hh1 = +document.getElementById("HH").value;
+       let sh1 = +document.getElementById("SH").value;
+       let tbc= (vl1+hh1+sh1)/3;
+       alert("Tổng điểm 3 môn: " +tbc);
+    }
+</script>
+
+</body>
+</html>

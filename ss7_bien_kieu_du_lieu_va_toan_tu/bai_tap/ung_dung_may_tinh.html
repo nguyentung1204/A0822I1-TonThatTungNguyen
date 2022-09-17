@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<form method="get">
+    <input type="text" id="so1">
+    <input type="text" id="so2"><br>
+    <button type="button" onclick="cong()">Addition(+)</button>
+    <button type="button" onclick="tru()">Subtraction(-)</button>
+    <button type="button" onclick="nan()">Multiplication(*)</button>
+    <button type="button" onclick="chi()">Division(/)</button>
+    <p id="ket"></p>
+</form>
+<script>
+    function cong() {
+        let nap1 = +document.getElementById('so1').value;
+        let nap2 = +document.getElementById('so2').value;
+        let cong = nap1 + nap2;
+        document.getElementById("ket").innerHTML = "Kết quả là: " + cong;
+    }
+
+    function tru() {
+        let nap1 = +document.getElementById('so1').value;
+        let nap2 = +document.getElementById('so2').value;
+        let tru = nap1 - nap2;
+        document.getElementById("ket").innerHTML = "Kết quả là: " + tru;
+    }
+
+    function nan() {
+        let nap1 = +document.getElementById('so1').value;
+        let nap2 = +document.getElementById('so2').value;
+        let nan = nap1 * nap2;
+        document.getElementById("ket").innerHTML = "Kết quả là: " + nan;
+    }
+
+    function chi() {
+        let nap1 = +document.getElementById('so1').value;
+        let nap2 = +document.getElementById('so2').value;
+        let chi = nap1 / nap2;
+        document.getElementById("ket").innerHTML = "Kết quả là: " + chi;
+    }
+</script>
+</body>
+</html>

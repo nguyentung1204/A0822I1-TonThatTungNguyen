@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp hạng học lực</title>
+</head>
+<body>
+<script>
+    var kt = prompt("Nhập điểm kiểm tra");
+    var gk = prompt("Nhập điểm giữa kì");
+    var ck = prompt("Nhập điểm cuối kì");
+    let tk = (kt * 1 + gk * 2 + ck * 3) / 6;
+    if (kt >= 0 && kt <=10 && gk >=0 && gk <=10 && ck >=0 && ck <= 10){
+        if (tk >= 8) {
+        alert("Học sinh giỏi")
+    } else if (tk >= 7) {
+        alert("Học sinh khá")
+    } else if (tk >= 5) {
+        alert("Học sinh trung bình")
+    } else if (tk >= 3) {
+        alert("Học sinh yếu")
+    } else {
+        alert("Học sinh kém")
+    }
+    }else {
+        alert("Nhập sai điểm")
+    }
+</script>
+</body>
+</html>

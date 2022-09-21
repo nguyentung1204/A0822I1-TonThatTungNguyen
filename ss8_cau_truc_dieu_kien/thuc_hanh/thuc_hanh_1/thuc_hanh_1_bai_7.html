@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+<h1>Tính cước điện thoại</h1>
+<input type="text" id="cuoc"> Phút<br><br>
+<button type="button" onclick="cuocdienthoai()">Tính toán</button>
+<p id="kq"></p>
+<script>
+    function cuocdienthoai() {
+        let dt = +document.getElementById("cuoc").value;
+        if (dt >= 0 && dt <= 10) {
+            document.getElementById("kq").innerHTML = ("Cước điện thoại: " + dt * 550 +"vnđ");
+        } else if (dt >= 11 && dt <= 20) {
+            document.getElementById("kq").innerHTML = ("Cước điện thoại: " + dt * 650 +"vnđ");
+        } else if (dt >= 21 && dt <= 30) {
+            document.getElementById("kq").innerHTML = ("Cước điện thoại: " + dt * 750 +"vnđ");
+        } else {
+            document.getElementById("kq").innerHTML = ("Cước điện thoại: " + dt * 1000 +"vnđ");
+        }
+    }
+</script>
+</body>
+</html>

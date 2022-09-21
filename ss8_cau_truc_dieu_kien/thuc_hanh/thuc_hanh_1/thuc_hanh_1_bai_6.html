@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+<h1>Tính hoa hồng</h1>
+<input type="text" id="doanhthu"><br><br>
+<button type="button" onclick="doanhthuthang()">Tính toán</button>
+<p id="kq"></p>
+<script>
+    function doanhthuthang() {
+        let dt = +document.getElementById("doanhthu").value;
+        if(dt>=0 && dt<=2000000){
+            document.getElementById("kq").innerHTML=("Hoa hồng là: " + dt*2/100);
+        }else if(dt>=2000001 && dt<=5000000){
+            document.getElementById("kq").innerHTML=("Hoa hồng là: " + dt*5/100);
+        }else if(dt>=5000001 && dt<=10000000){
+            document.getElementById("kq").innerHTML=("Hoa hồng là: " + dt*10/100);
+        }else {
+            document.getElementById("kq").innerHTML = ("Hoa hồng là: " + dt * 15 / 100);
+        }
+    }
+</script>
+</body>
+</html>

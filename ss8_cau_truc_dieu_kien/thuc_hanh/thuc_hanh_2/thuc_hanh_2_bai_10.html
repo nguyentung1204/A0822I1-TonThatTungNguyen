@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<h1>Tính giá điện</h1>
+<input type="text" id="giadien"><br><br>
+<button type="button" onclick="tinhgiadien()">Tính</button>
+<p id="kq1"></p>
+<script>
+    function tinhgiadien() {
+        let gd = +document.getElementById("giadien").value;
+        if (gd >= 0 && gd <= 50) {
+            document.getElementById("kq1").innerHTML = ("Giá điện tháng này: " + gd * 1678 + "vnđ");
+        } else if (gd >= 51 && gd <= 100) {
+            document.getElementById("kq1").innerHTML = ("Giá điện tháng này: " + ((50 * 1678) + ((gd - 50) * 1734)) + "vnđ");
+        } else if (gd >= 101 && gd <= 200) {
+            document.getElementById("kq1").innerHTML = ("Giá điện tháng này: " + ((50 * 1678) + ((gd - 50) * 1734) + ((gd - 100) * 2017)) + "vnđ");
+        } else if (gd >= 201 && gd <= 300) {
+            document.getElementById("kq1").innerHTML = ("Giá điện tháng này: " + ((50 * 1678) + ((gd - 50) * 1734) + ((gd - 100) * 2017) + ((gd - 200) * 2536)) + "vnđ");
+        } else if (gd >= 301 && gd <= 400) {
+            document.getElementById("kq1").innerHTML = ("Giá điện tháng này: " + ((50 * 1678) + ((gd - 50) * 1734) + ((gd - 100) * 2017) + ((gd - 200) * 2536) + ((gd - 300) * 2834)) + "vnđ");
+        } else {
+            document.getElementById("kq1").innerHTML = ("Giá điện tháng này: " + (((50 * 1678) + ((gd - 50) * 1734) + ((gd - 100) * 2017) + ((gd - 200) * 2536) + ((gd - 300) * 2834))+(gd-400) * 2927) + "vnđ");
+        }
+    }
+</script>
+</body>
+</html>

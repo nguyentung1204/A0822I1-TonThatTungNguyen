@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+<h2>Giải phương trình bậc 1</h2>
+a <input type="text" id="a"><br><br>
+b <input type="text" id="b"><br><br>
+<button type="button" onclick="giaipt()">Tính toán</button>
+<p id="kq2"></p>
+<script>
+    function giaipt() {
+        var a = parseFloat(document.getElementById("a").value);
+        var b = parseFloat(document.getElementById("b").value);
+        let pt = (-b / a);
+        if (a == 0 && b == 0) {
+            document.getElementById("kq2").innerHTML = "Phương trình có vô số nghiệm: ";
+        } else if (a == 0 && b != 0) {
+            document.getElementById("kq2").innerHTML = "Phương trình vô nghiệm: ";
+        }else {
+            document.getElementById("kq2").innerHTML = ("Phương trình có nghiệm duy nhất: " + pt);
+        }
+    }
+</script>
+</body>
+</html>

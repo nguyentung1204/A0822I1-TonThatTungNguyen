@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính đơn giản</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td colspan="4"><input type="text" id="window"></td>
+        </tr>
+        <tr style="color: blue">
+            <th><input type="button" onclick="nhap(this.value)" value="1"></th>
+            <th><input type="button" onclick="nhap(this.value)" value="2"></th>
+            <th><input type="button" onclick="nhap(this.value)" value="3"></th>
+            <th><input type="button" onclick="nhap(this.value)" value="+"></th>
+        </tr>
+        <tr style="color: blue">
+            <th><input type="button" onclick="nhap(this.value)" value="4"></th>
+            <th><input type="button" onclick="nhap(this.value)" value="5"></th>
+            <th><input type="button" onclick="nhap(this.value)" value="6"></th>
+            <th><input type="button" onclick="nhap(this.value)" value="-"></th>
+        </tr>
+        <tr style="color: blue">
+            <th><input type="button" onclick="nhap(this.value)" value="7"></th>
+            <th><input type="button" onclick="nhap(this.value)" value="8"></th>
+            <th><input type="button" onclick="nhap(this.value)" value="9"></th>
+            <th><input type="button" onclick="nhap(this.value)" value="*"></th>
+        </tr>
+        <tr style="color: blue">
+            <th><input type="button" onclick="xoa()" value="C"></th>
+            <th><input type="button" onclick="nhap(this.value)" value="0"></th>
+            <th><input type="button" onclick="bang()" value="="></th>
+            <th><input type="button" onclick="nhap(this.value)" value="/"></th>
+        </tr>
+    </table>
+</form>
+<script>
+    function nhap(so) {
+        document.getElementById("window").value += so;
+    }
+    function xoa() {
+        document.getElementById("window").value=" "
+    }
+    function bang() {
+        let string = document.getElementById("window").value;
+        document.getElementById("window").value = eval(string);
+        }
+</script>
+</body>
+</html>

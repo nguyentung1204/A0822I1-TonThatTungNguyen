@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 12</title>
+</head>
+<body>
+<input type="text" id="nhapsotien"> Tiền vay<br><br>
+<input type="text" id="thang"> Tháng<br><br>
+<input type="text" id="lai"> Lãi tháng<br><br>
+<button type="button" id="submit" onclick="tinhtoan()">Tính toán</button>
+<p id="kq"></p>
+<script>
+    function tinhtoan() {
+    let tien = +document.getElementById("nhapsotien").value;
+    let thang = +document.getElementById("thang").value;
+    let lai = +document.getElementById("lai").value;
+    let tong = tien*((1+lai/100)**thang)
+        document.getElementById("kq").innerHTML="Tổng trả: " + tong ;
+    }
+</script>
+</body>
+</html>

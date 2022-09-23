@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bài 11</title>
 </head>
 <body>
-
+<input type="text" id="tienluong"><br><br>
+<button type="button" onclick="tinhtoan()">Tính toán</button>
+<p id="kq"></p>
+<script>
+    function tinhtoan() {
+    let luong = document.getElementById("tienluong").value;
+    if (luong <= 5000000) {
+        document.getElementById("kq").innerHTML = "Thuế thu nhập cá nhân: " + (luong * 0.05);
+    } else if (luong <= 10000000) {
+        document.getElementById("kq").innerHTML = "Thuế thu nhập cá nhân: " + ((luong * 0.1)+250000) ;
+    } else if (tienLuong <= 18000000) {
+        document.getElementById("kq").innerHTML = "Thuế thu nhập cá nhân: " + ((luong * 0.15)+750000);
+    } else if (tienLuong <= 32000000) {
+        document.getElementById("kq").innerHTML = "Thuế thu nhập cá nhân: " + ((luong * 0.2)+1950000);
+    } else if (tienLuong <= 52000000) {
+        document.getElementById("kq").innerHTML = "Thuế thu nhập cá nhân: " + ((luong * 0.25)+4750000);
+    } else if (tienLuong <= 80000000) {
+        document.getElementById("kq").innerHTML = "Thuế thu nhập cá nhân: " + ((luong * 0.30)+9750000);
+    } else {
+        document.getElementById("kq").innerHTML = "Thuế thu nhập cá nhân: " + ((luong * 0.35) + 18150000);
+    }
+    }
+</script>
 </body>
 </html>

@@ -5,6 +5,24 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    var a = +prompt("Nhập vào a");
+    var b = +prompt("Nhập vào b");
+    var c = +prompt("Nhập vào c");
+    let dt = b * b - 4 * a * c;
+    let dt1 = Math.sqrt(dt);
+    let x1 = (-b + dt1) / (2 * a);
+    let x2 = (-b - dt1) / (2 * a);
+    if (dt == 0) {
+        alert("Phương trình có nghiệm kép x1 = x2 =" + -b / (2 * a));
+    }
+    if (dt > 0) {
+        alert("phương trình có 2 ngiệm phân biệt: " + " x1 = " + x1 + " và " + " x2 = " + x2);
+    } else {
+        alert("Phương trình vô nghiệm")
+    }
 
+
+</script>
 </body>
 </html>

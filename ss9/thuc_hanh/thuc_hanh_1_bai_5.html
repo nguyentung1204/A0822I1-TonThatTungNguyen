@@ -7,15 +7,13 @@
 <body>
 </body>
 <script>
-    let F = 0, F1 = 1, nextF;
+    let F0 = 0, F1 = 1, NextF;
     let sum =0;
     for (let i=0;i<=20;i++){
-        nextF = F+F1;
-        F = F1;
-        F1 = nextF;
-        sum +=F;
-
-
+        NextF = F0+F1;
+        F0 = F1;
+        F1 = NextF;
+        sum +=F0;
     }
     document.write("tổng 20 số đầu tiên trong dãy finabocci là: "+sum);
 </script>

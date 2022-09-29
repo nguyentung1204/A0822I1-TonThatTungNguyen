@@ -6,13 +6,13 @@
 </head>
 <body>
 <script>
-    let f0 = 0;
-    let f1 = 1;
+    let F0 = 0, F1 = 1, NextF;
+
     for (let i=0;i<20;i++){
-        document.write(f0+"<br>")
-        const tmp = f0 +f1;
-        f0=f1;
-        f1 = tmp;
+        document.write(F0+"<br>")
+        NextF = F0 +F1;
+        F0=F1;
+        F1 = NextF;
     }
 </script>
 </body>

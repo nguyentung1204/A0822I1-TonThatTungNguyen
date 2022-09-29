@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="button()">Thử</button>
+<script>
+    function button() {
+        let random = Math.round(Math.random() * 100);
+        let num;
+        do{
+            num = Number(prompt("Nhập số dự đoán: "));
+            if (num == random){
+                alert("Bạn đã đoán đúng");
+            }else if (num < random){
+                alert("Số dự đoán nhỏ hơn số bí mật");
+            }else {
+                alert("Số dự đoán lớn hơn số bí mật");
+            }
+        }while (random != num)
+    }
+</script>
+</body>
+</html>
